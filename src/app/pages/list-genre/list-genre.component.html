@@ -1,0 +1,11 @@
+
+  <div class="row align-items">
+    <div *ngFor="let genre of genres" class="card text-white-50 bg-dark mb-3 m-3 text-center" style="max-width: 18rem">
+      <div class="card-body">
+        <h5 class="card-title"><b>{{ genre.name }}</b></h5>
+        <p> Amount of songs: {{ genre.musics_count}}</p>
+      </div>
+      <button class="text-white-50 bg-dark m-3" >See More</button>
+    </div>
+  </div>
+

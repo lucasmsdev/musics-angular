@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from 'src/app/services/api.service';
 import { Router } from '@angular/router';
-import { Genre } from 'src/app/models/Genre';
+import { ApiService } from 'src/app/services/api.service';
+import { Music } from 'src/app/models/Music';
 
 @Component({
   selector: 'app-list-music',
@@ -10,20 +10,18 @@ import { Genre } from 'src/app/models/Genre';
 })
 export class ListMusicComponent implements OnInit {
 
-  public genres: Genre[] = [];
+  public musics: Music[] = [];
 
   constructor(
     private apiService: ApiService,
     private router: Router
   ) { }
 
-  public ngOnInit(): void {
-    this.loadGenres();
-}
-
-
-public async loadGenres() {
-  this.genres = await this.apiService.get<Genre[]>('genres');
-}
+  ngOnInit(): void {
+    this.loadMusic();
+  }
+  public async loadMusic() {
+    this.musics = await this.apiService.get<Music[]>('musics')
+  }
 
 }

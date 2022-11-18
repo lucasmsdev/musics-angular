@@ -12,8 +12,9 @@
   font-size: 40px;
 }
 
-.itens{
+a{
 font-size: 28px;
-font-family: 'Courier New', Courier, monospace;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+text-decoration: none;
 }
 

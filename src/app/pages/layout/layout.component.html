@@ -2,12 +2,13 @@
   <div class="container">
     <img src="https://cdn-icons-png.flaticon.com/512/3844/3844724.png" alt="icon theme" width="100" class="rounded mx-auto d-block">
     <br>
-    <h1 class="navbar-brand" href="#" >MusicPro</h1>
+    <h1 [routerLink]="['']" class="navbar-brand" href="#" >MusicPro</h1>
     <br>
-    <p class="itens">Musics</p>
-    <p class="itens">Artists</p>
-    <p class="itens">Playlists</p>
-    <p class="itens">My playlists</p>
+    <a [routerLink]="['/']" class="d-block text-muted mb-3">Genres</a>
+    <a [routerLink]="['/musics']" class="d-block text-muted mb-3">Musics</a>
+    <a [routerLink]="['/artists']" class="d-block text-muted mb-3">Artists</a>
+    <a [routerLink]="['/musics']" class="d-block text-muted mb-3">Playlists</a>
+    <a [routerLink]="['/musics']" class="d-block text-muted mb-3">My playlists</a>
 
 
   </div>
